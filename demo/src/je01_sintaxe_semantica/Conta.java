@@ -10,7 +10,7 @@ public class Conta {
     }
 
     public void imprimirSaldo() {
-        //disponível em toda classe
+        //disponivel em toda classe
         System.out.println(saldo);
         //somente o metodo sacar conhece esta variavel
         //System.out.println(novoSaldo);
