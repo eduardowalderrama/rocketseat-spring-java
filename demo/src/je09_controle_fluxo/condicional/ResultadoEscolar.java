@@ -7,17 +7,8 @@ public class ResultadoEscolar {
         Scanner scanner = new Scanner(System.in);
         int nota = scanner.nextInt();
 
-        if (nota >= 7)
-            System.out.println("Aprovado");
-        else if (nota >= 5)
-            fluxoIntermediario();
-        else
-            System.out.println("Reprovado");
+        String resultado = nota >= 7 ? "Aprovado" : nota >= 5 ? "Recuperacao" : "Reprovado";
+        System.out.println(resultado);
     }
 
-    static void fluxoIntermediario() {
-        // faria alguma coisa
-        System.out.println("Recuperacao");
-        System.out.println("Estude um pouco mais");
-    }
 }
