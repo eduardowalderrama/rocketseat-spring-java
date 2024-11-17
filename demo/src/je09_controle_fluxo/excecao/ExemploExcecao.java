@@ -1,4 +1,4 @@
-package je10_controle_fluxo_excecao;
+package je09_controle_fluxo.excecao;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
