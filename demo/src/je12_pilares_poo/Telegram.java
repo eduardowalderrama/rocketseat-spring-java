@@ -1,6 +1,6 @@
 package je12_pilares_poo;
 
-public class Telegram extends SistemaMensagemInstantanea {
+public class Telegram extends ServicoMensagemInstantanea {
 
     @Override
     public void enviarMensagem() {

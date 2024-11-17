@@ -1,6 +1,6 @@
 package je12_pilares_poo;
 
-public class MSNMessenger extends SistemaMensagemInstantanea {
+public class MSNMessenger extends ServicoMensagemInstantanea {
 
     @Override
     public void enviarMensagem() {

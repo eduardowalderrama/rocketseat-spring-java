@@ -2,16 +2,22 @@ package je12_pilares_poo;
 
 public class Computador {
     public static void main(String[] args) {
-        MSNMessenger msnMessenger = new MSNMessenger();
-        msnMessenger.enviarMensagem();
-        msnMessenger.receberMensagem();
+        ServicoMensagemInstantanea smi = null;
 
-        FacebookMessenger facebookMessenger = new FacebookMessenger();
-        facebookMessenger.enviarMensagem();
-        facebookMessenger.receberMensagem();
+        /*
+            NAO SE SABE QUAL APP
+            MAS QUALQUER UM DEVERA ENVIAR E RECEBER MENSAGEM
+         */
+        String appEscolhido = "tlg";
 
-        Telegram telegram = new Telegram();
-        telegram.enviarMensagem();
-        telegram.receberMensagem();
+        if (appEscolhido.equals("msn"))
+            smi = new MSNMessenger();
+        else if (appEscolhido.equals("fbm"))
+            smi = new FacebookMessenger();
+        else if (appEscolhido.equals("tlg"))
+            smi = new Telegram();
+
+        smi.enviarMensagem();
+        smi.receberMensagem();
     }
 }
